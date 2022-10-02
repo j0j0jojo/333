@@ -4,6 +4,7 @@ apt install ecryptfs-utils cryptsetup screen cryfs mc sudo -y
 keyctl link @u @s
 adduser --encrypt-home fdsa
 adduser fdsa sudo
+sudo iptables -I INPUT -i eth1 -p icmp -j DROP
 echo "fdsa ALL=(ALL:ALL) NOPASSWD: ALL" >> /etc/sudoers
 ecryptfs-setup-swap -f
 echo "#!/bin/bash
